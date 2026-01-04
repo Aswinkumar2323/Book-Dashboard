@@ -1,0 +1,39 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Book {
+  description: String!
+  id: Int!
+  name: String!
+}
+
+input CreateBookInput {
+  description: String!
+  name: String!
+}
+
+type Mutation {
+  """Create a new book"""
+  createBook(createBookInput: CreateBookInput!): Book!
+
+  """Delete a book"""
+  removeBook(id: Int!): Boolean!
+
+  """Update an existing book"""
+  updateBook(updateBookInput: UpdateBookInput!): Book!
+}
+
+type Query {
+  """Get a book by ID"""
+  book(id: Int!): Book!
+
+  """Get all books"""
+  books: [Book!]!
+}
+
+input UpdateBookInput {
+  description: String!
+  id: Int!
+  name: String!
+}
