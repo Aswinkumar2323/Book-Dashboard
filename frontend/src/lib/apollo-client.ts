@@ -9,7 +9,7 @@ import { setContext } from '@apollo/client/link/context';
 export const createApolloClient = (getAccessTokenSilently: () => Promise<string>) => {
     // HTTP link to GraphQL API
     const httpLink = createHttpLink({
-        uri: import.meta.env.VITE_API_URL || 'http://localhost:3005/graphql',
+        uri: import.meta.env.VITE_API_URL || 'http://localhost:8080/graphql',
     });
 
     // Auth link to add JWT token to requests

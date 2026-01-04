@@ -55,7 +55,7 @@ export const Login: React.FC = () => {
                 align="center"
                 justify="center"
                 px={4}
-                py={12}
+                py={6}
             >
                 <Box
                     maxW="1000px"
@@ -64,7 +64,6 @@ export const Login: React.FC = () => {
                     overflow="hidden"
                     bg="white"
                     shadow="2xl"
-                    minH="600px"
                 >
                     <Flex direction={{ base: 'column', md: 'row' }} h="full">
                         {/* Left Side - Hero Section */}
