@@ -60,9 +60,13 @@ export class BooksService {
         const book = await this.findOne(updateBookInput.id);
         console.log('Found book:', JSON.stringify(book, null, 2));
 
-        // Update the fields directly (they're required now)
-        book.name = updateBookInput.name;
-        book.description = updateBookInput.description;
+        // Update only the fields that are provided (optional fields)
+        if (updateBookInput.name !== undefined) {
+            book.name = updateBookInput.name;
+        }
+        if (updateBookInput.description !== undefined) {
+            book.description = updateBookInput.description;
+        }
 
         const updatedBook = await this.booksRepository.save(book);
         console.log('Updated book:', JSON.stringify(updatedBook, null, 2));
