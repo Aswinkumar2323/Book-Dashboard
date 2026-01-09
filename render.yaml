@@ -12,10 +12,10 @@ services:
       - key: PORT
         value: 10000
       - key: AUTH0_DOMAIN
-        sync: false
+        value: ak23-dev.us.auth0.com  
       - key: AUTH0_AUDIENCE
-        sync: false
+        value: https://book-dashboard-api
       - key: DATABASE_PATH
         value: ./database.sqlite
       - key: FRONTEND_URL
-        sync: false
+        value: http://localhost:5173,https://book-das.netlify.app,https://book-dashboard-hhxb.onrender.com
