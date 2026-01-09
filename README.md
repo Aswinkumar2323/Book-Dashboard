@@ -287,20 +287,9 @@ If you see errors like "Module '@apollo/client' has no exported member 'ApolloPr
 - [Auth0 Documentation](https://auth0.com/docs)
 - [TypeORM Documentation](https://typeorm.io/)
 
-## 📄 License
-
-MIT
 
 ## 👨‍💻 Author
 
-Built as a full-stack engineering test project demonstrating:
-- Modern web development practices
-- Clean code architecture
-- Type-safe development
-- Authentication & authorization
-- GraphQL API design
-- React best practices
-
----
-
-**Happy Coding! 🚀**
+Name : Aswin Kumar
+Email : aswinak0330@gmail.com
+Phone no : +91 9790796357
