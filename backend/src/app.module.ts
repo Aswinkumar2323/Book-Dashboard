@@ -17,6 +17,7 @@ import { Book } from './books/entities/book.entity';
     // Load environment variables from .env file
     ConfigModule.forRoot({
       isGlobal: true,
+      envFilePath: '.env',
     }),
 
     // Configure GraphQL with Apollo Server
