@@ -11,9 +11,7 @@ async function bootstrap() {
 
   // Enable CORS for frontend communication
   // Support multiple origins (comma-separated in FRONTEND_URL)
-  const allowedOrigins = process.env.FRONTEND_URL
-    ? process.env.FRONTEND_URL.split(',').map(url => url.trim())
-    : ['http://localhost:5173'];
+  const allowedOrigins = process.env.FRONTEND_URL;
 
   console.log('CORS Configuration:');
   console.log('Allowed Origins:', allowedOrigins);
@@ -25,7 +23,7 @@ async function bootstrap() {
         return callback(null, true);
       }
 
-      if (allowedOrigins.includes(origin)) {
+      if (allowedOrigins?.includes(origin)) {
         console.log(`CORS: Allowing origin: ${origin}`);
         callback(null, true);
       } else {
