@@ -33,7 +33,7 @@ type Query {
 }
 
 input UpdateBookInput {
-  description: String!
   id: Int!
-  name: String!
+  name: String
+  description: String
 }
